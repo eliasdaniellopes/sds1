@@ -34,7 +34,7 @@ public class GameDTO implements Serializable {
 		return title;
 	}
 
-	public void setTitle(String itle) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 
