@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 const Header = () => (
      <header className="main-header">
-         <Logo></Logo>
+        <Logo></Logo>
         <Link to="/">
             <div className="logo-text">
                 <span className="logo-text-1">Big Game</span>
