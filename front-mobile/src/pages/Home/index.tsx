@@ -1,14 +1,21 @@
 import React from 'react';
 import { Text, StyleSheet, View, Image, Alert } from 'react-native'
-import { FontAwesome5  as Icon} from  '@expo/vector-icons'
-import {RectButton} from 'react-native-gesture-handler'
+import { FontAwesome5  as Icon} from  '@expo/vector-icons';
+import {RectButton} from 'react-native-gesture-handler';
+import Header from '../../components/Header';
+import { useNavigation } from '@react-navigation/native'
+
+
 
 const Home = () => {
+  const navigation = useNavigation();
+
     const handleOnPress = () =>{
-        Alert.alert("Você clicou no botão")
+        navigation.navigate('CreateRecord')
     }
     return (
         <>
+            <Header></Header>
             <View style={styles.container}>
                 <Image style={styles.gamerImage} 
                     source={require('../../assets/gamer.png')}></Image>
